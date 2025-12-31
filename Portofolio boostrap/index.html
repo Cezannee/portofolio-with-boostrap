@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agil Friansyah - Blackhole Portofolio</title>
+  <link rel="stylesheet" href="static/css/style.css" />
+
+</head>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+<body>
+
+  <!-- BACKGROUND VIDEO -->
+<div id="bg-wrap">
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="static/assets/video/blackhole.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+  <!-- FLOATING AUDIO PLAYER -->
+  <div class="audio-player">
+  <img src="static/assets/audio/pic/out of control.jpg" class="audio-cover" />
+  <a>HOYO-MiX - Space Walk</a>
+
+  <button id="audio-btn" class="audio-btn">
+    ⏵
+  </button>
+
+  <audio id="audio" src="static/assets/audio/HOYO-MiX - Space Walk.mp3" autoplay loop muted></audio>
+</div>
+  <!-- STARFIELD -->
+  <canvas id="starfield"></canvas>
+
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="brand">Agil<span>Friansyah</span></div>
+
+  <!-- HAMBURGER BUTTON (Mobile) -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- NAV MENU -->
+  <nav id="nav-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <h1>Hi, I'm <span>Agil Friansyah</span></h1>
+      <p class="lead">Fullstack Developer — Automation — Space Aesthetic </p>
+
+      <div class="cta">
+        <button onclick="scrollToSection('projects')">View Projects</button>
+        <a class="ghost" href="#contact">Contact</a>
+      </div>
+
+      
+    </div>
+  </section>
+
+<!-- ABOUT -->
+<section id="about" class="panel card about-section">
+
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-wrapper">
+
+    <!-- PHOTO / AVATAR -->
+    <div class="about-photo">
+      <img src="static/assets/picture/ava.png" alt="Agil here">
+    </div>
+
+    <!-- TEXT BIO -->
+    <div class="about-text">
+      <p>
+        I’m a developer with a strong focus on backend systems, while still loving
+        to blend futuristic elements and space-themed aesthetics into every project
+        I create.
+      </p>
+
+      <p>
+        I actively work on various automation projects, including Discord Bots
+        and small applications that enhance digital workflows. My goal is to build
+        systems that are stable, efficient, and infused with the cosmic-tech style
+        that defines my work.
+      </p>
+
+
+      <div class="skills cosmic-skills">
+        <span><img src="static/assets/icon/html-5.png" alt=""> HTML</span>
+        <span><img src="static/assets/icon/css-3.png" alt=""> CSS</span>
+        <span><img src="static/assets/icon/js.png" alt=""> JavaScript</span>
+        <span><img src="static/assets/icon/python.png" alt=""> Python</span>
+        <span><img src="static/assets/icon/atom.png" alt=""> React</span>
+        <span><img src="static/assets/icon/golang.png" alt=""> Golang</span>
+        <span><img src="static/assets/icon/office.png" alt=""> Microsoft Office</span>
+        <span><img src="static/assets/icon/database.png" alt=""> SQL</span>
+        <span><img src="static/assets/icon/c-.png" alt=""> C++</span>
+        <span><img src="static/assets/icon/vroid.jpg" alt=""> VRoid Studio</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+<section id="projects" class="panel card projects-section">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="works-grid">
+
+    <!-- WORK ITEM 1 -->
+    <a class="work-card" href="https://discord.com/oauth2/authorize?client_id=1399659238556569702" target="_blank">
+      <div class="work-thumb">
+        <img src="static/assets/picture/montelli.png" alt="">
+      </div>
+      <div class="work-meta">
+        <h3>Montelli Index</h3>
+        <p>create a program for automatic notifications on Discord for BBCA stock prices.</p>
+      </div>
+    </a>
+
+    <!-- WORK ITEM 2 -->
+    <a class="work-card" target="_blank">
+      <div class="work-thumb">
+        <img src="static/assets/picture/Portofolio.png" alt="">
+      </div>
+      <div class="work-meta">
+        <h3>Blackhole Portfolio</h3>
+        <p>Portfolio full animated with background video and starfield.</p>
+      </div>
+    </a>
+
+    <!-- WORK ITEM 3 -->
+    <a class="work-card" target="_blank">
+      <div class="work-thumb">
+        <img src="static/assets/picture/evoting.png" alt="">
+      </div>
+      <div class="work-meta">
+        <h3>E Voting System</h3>
+        <p>Realtime Windows application voting based on browser working on local area network.</p>
+      </div>
+    </a>
+
+        <!-- WORK ITEM 4 -->
+    <a class="work-card" href="https://discord.com/oauth2/authorize?client_id=829207209438871553" target="_blank">
+      <div class="work-thumb">
+        <img src="static/assets/picture/robin.png" alt="">
+      </div>
+      <div class="work-meta">
+        <h3>Robin</h3>
+        <p>Inspired by "Robin," the singer from the game 
+          Honkai: Star Rail, this program is designed to interact with the 
+          Discord APP server music player using the Python programming language and 
+          using the YouTube and Spotify APIs.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- WORK EXPERIENCE -->
+<section id="experience" class="panel card experience-section">
+
+  <h2 class="section-title">Work Experience</h2>
+
+  <div class="table-wrapper">
+    <table class="xp-table">
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Company</th>
+          <th>Year</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Owner</td>
+          <td>Luna Plastik</td>
+          <td>2024 - Now</td>
+          <td>Sales business in the plastics sector.</td>
+        </tr>
+
+        <tr>
+          <td>Freelance Front-End</td>
+          <td>Nova Creative</td>
+          <td>2023 - 2024</td>
+          <td>Designing the appearance of a website.</td>
+        </tr>
+
+        <tr>
+          <td>Automotive Electronics Technician</td>
+          <td>Dwida Jaya Tama</td>
+          <td>2019 - 2020</td>
+          <td>Handling ECU system, Repairing and Reprogramming ECU</td>
+        </tr>        
+
+        <tr>
+          <td>Gas Station Attendant</td>
+          <td>SPBU Pertamina 34-15314</td>
+          <td>2019 - 2019</td>
+          <td>Providing fuel filling services.</td>
+        </tr>
+
+        <tr>
+          <td>Archivist (Intern)</td>
+          <td>Badan Riset dan Inovasi Nasional</td>
+          <td>2018</td>
+          <td>Manage and group archives into three categories, 
+            namely active archives that are still used in daily 
+            activities, inactive archives that are rarely used but
+            are still needed as references, and non-active archives
+            that are no longer used and are prepared for destruction
+             or handover to archival institutions according to regulations.</td>
+        </tr>
+
+        <tr>
+          <td>Shop Assistance</td>
+          <td>Atika GGSP</td>
+          <td>2016 - 2018</td>
+          <td>Helping and Managing the store.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>
+
+
+
+ <!-- CONTACT ME -->
+<section class="contact-section panel card" id="contact">
+
+    <h3 class="section__subtitle neon-sub">
+        Don't hesitate to <span>reach out</span>
+    </h3>
+
+    <h2 class="section__title neon-title">
+        Contact Me
+    </h2>
+
+    <div class="contact__container container grid">
+
+        <form action="?" method="POST" class="contact__form neon-form" id="contact-form">
+
+            <div class="contact__group">
+                <input type="text" name="user_name" required placeholder="Enter your name" class="contact__input neon-input">
+
+                <input type="email" name="user_email" required placeholder="Enter your email" class="contact__input neon-input">
+            </div>
+
+            <textarea name="user_project" required placeholder="Enter your message" class="contact__input neon-input"></textarea>
+
+            <p class="contact__message" id="contact-message"></p>
+
+            <!-- reCAPTCHA (original) -->
+            <div class="g-recaptcha" data-sitekey="6LfyOCsqAAAAAPO0ud3GG53nrOxBShXkVthjLjD5"></div>
+
+            <br>
+
+            <button type="submit" class="button contact__button neon-send">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+      <div class="social-links">
+
+    <a href="https://www.linkedin.com/in/agilfn05" target="_blank">
+      <img src="static/assets/icon/linkedin.svg" alt="LinkedIn">
+    </a>
+
+    <a href="https://www.instagram.com/agil.fn" target="_blank">
+      <img src="static/assets/icon/instagram.svg" alt="Instagram">
+    </a>
+
+    <a href="https://discord.com/users/czn.ne" target="_blank">
+      <img src="static/assets/icon/discord.svg" alt="Discord">
+    </a>
+
+      <a href="https://github.com/Cezannee/" target="_blank">
+      <img src="static/assets/icon/github.svg" alt="GitHub">
+    </a>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Agil Friansyah</p>
+
+
+</footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="static/js/main.js"></script>
+  <script src="static/js/particles.js"></script>
+
+</body>
+</html>
